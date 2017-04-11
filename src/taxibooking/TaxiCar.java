@@ -12,7 +12,7 @@ package taxibooking;
 public class TaxiCar
 {
     private String registrationNum;
-    private boolean actualStatus;
+    private static boolean actualStatus;
 
     public TaxiCar(String registrationNum, boolean actualStatus)
     {

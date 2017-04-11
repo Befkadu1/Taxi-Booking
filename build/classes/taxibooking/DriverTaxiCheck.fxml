@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="taxibooking.DriverTaxiCheckController">
+<children>
+      <Label layoutX="42.0" layoutY="47.0" prefHeight="21.0" prefWidth="120.0" text="Drivers' List">
+         
+      </Label>
+      <Label layoutX="354.0" layoutY="47.0" prefHeight="21.0" prefWidth="188.0" text="Cars' List, Registration no.">
+         
+      </Label>
+      <ListView fx:id="driversListView" layoutX="25.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="carsListView" layoutX="354.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="171.0" layoutY="321.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="31.0" prefWidth="109.0" text="Back" />
+      <Button layoutX="300.0" layoutY="321.0" mnemonicParsing="false" onAction="#bookButtonAction" prefHeight="31.0" prefWidth="109.0" text="Book" />
+      <Label fx:id="labelDriverStatus" layoutX="33.0" layoutY="357.0" textFill="#d01919" />
+      <Button fx:id="availilabilityButton" layoutX="25.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkDriverAvailabilityAction" text="Availability check" />
+      <Button fx:id="carAvaililabilityButton" layoutX="420.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkCarAvailabilityAction" text="Car availability check" />
+      <Label fx:id="labelCarStatus" layoutX="420.0" layoutY="357.0" textFill="#d01919" />
+   </children>    
+</AnchorPane>

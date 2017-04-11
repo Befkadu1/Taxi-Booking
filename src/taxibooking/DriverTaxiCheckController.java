@@ -43,8 +43,8 @@ public class DriverTaxiCheckController implements Initializable
     @FXML
     private ListView carsListView; //ListView for the car
 
-    public static String driverSelection; //A string to show when the user selectee a driver 
-    public static String carSelection;//A string to show when the user selectee a car 
+    public static String driverSelection; //A string to show when the user select a driver 
+    public static String carSelection;//A string to show when the user select a car 
 
     @FXML
     private Button availilabilityButton; //A button to check if thespecific driver is availabe or not

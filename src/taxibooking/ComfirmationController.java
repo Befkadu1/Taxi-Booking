@@ -19,6 +19,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import static taxibooking.DriverTaxiCheckController.carSelection;
+import static taxibooking.DriverTaxiCheckController.copyArray;
+import static taxibooking.DriverTaxiCheckController.driverSelection;
 
 /**
  * FXML Controller class
@@ -77,6 +80,36 @@ public class ComfirmationController implements Initializable
     @FXML
     private void backConfirmationButtonAction(ActionEvent event) throws IOException
     {
+        
+//            for (Driver list : copyArray)
+//            {
+//                //System.out.println("copyArray name" + list.getDriverName());//For testing test
+//
+//                /*
+//                to check if the selected taxi driver is found in the database and checking his current status
+//                If he is not busy, it is possible to book. If so the next step is to forward to the Comfirmation.fxml scene
+//                 */
+//                System.out.println("Before booking " + list.getDriverName() + " " + list.getTaxiCar().isActualStatus() + " (False means currently free)");
+//
+//                if (DriverTaxiCheckController.driverSelection.equals(list.getDriverName() + " " + list.getExperience() + " years exp") && DriverTaxiCheckController.carSelection.equals(list.getTaxiCar().getRegistrationNum()))
+//                {
+//                    if (list.getTaxiCar().isActualStatus() == false)
+//                    {
+//                        AvailabilityCheck av = new AvailabilityCheck();
+//                        av.begin();
+//                        Parent root3 = FXMLLoader.load(getClass().getResource("DriverTaxiCheck.fxml"));
+//                        Scene scene = new Scene(root3);
+//                        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+//                        stage.setScene(scene);
+//                        stage.setTitle("Lund Taxi Booking");
+//
+//                    }
+//                } 
+//            }
+
+
+        
+        
         Parent root2 = FXMLLoader.load(getClass().getResource("DriverTaxiCheck.fxml"));
         Scene scene = new Scene(root2);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
